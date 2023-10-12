@@ -71,7 +71,7 @@ int main()
         
         float mean = float(sum2)/float(N);
 
-        cout << "The Mean of this array is " << float(mean) << endl;
+        cout << "The Mean of this arrar is" << float(mean) << endl;
         
        
 
