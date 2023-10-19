@@ -1,19 +1,28 @@
 #include <iostream>
 using namespace std;
+	//This is not an ideal location - we will soon address this
 
-int L;		//This is not an ideal location - we will soon address this
-
-int main()
+void displayBanner(int L)
 {
-	const string message = "Welcome to Computer Science";
-	
-	//Get the length of the string
-	L = message.length();
-
-	//Write the banner above
 	for (unsigned int n = 0; n < (L + 4); n++) {
 		cout << "*";
 	}
+	cout << endl;
+
+}
+
+void displayWithinBanner() 
+
+int main()
+{
+	const string message = "Welcome to Computer Science noel poopoo";
+	
+	//Get the length of the string
+
+	//Write the banner above
+
+	displayBanner(message.length());
+
 	cout << endl;
 
 	cout << "* ";				//Leading *
@@ -21,11 +30,7 @@ int main()
 	cout << " *" << endl;		//Trailing *
 
 	//Write the banner below
-	for (unsigned int n = 0; n < (L + 4); n++) {
-		cout << "*";
-	}
-	cout << endl;
-
+	displayBanner(message.length());
 	//Tell the calling shell all is well
 	return 0;
 }
