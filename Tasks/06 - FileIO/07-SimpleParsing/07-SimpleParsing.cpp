@@ -40,7 +40,7 @@ int main()
     //Display the result
     cout << "Subject Area is " << subjectArea << endl;
 
-    int code;
+    int code = 1001;
 
     //TO DO: 
     // Now find the module ID number
