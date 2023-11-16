@@ -40,13 +40,16 @@ int main()
     //Display the result
     cout << "Subject Area is " << subjectArea << endl;
 
-    int code = 1001;
+    int code = 1;
 
     //TO DO: 
     // Now find the module ID number
     // Store it in the integer variable code
     // Calculate the next value (code + 1)
     // Write out the new module string (correct answer is COMP1001).
+
+    inputStream >> code;
+    cout << "the new course code is "<< subjectArea << code+1 << endl;
 
     // (iii) Close
     inputStream.close();
