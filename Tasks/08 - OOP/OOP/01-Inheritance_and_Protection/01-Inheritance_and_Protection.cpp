@@ -8,6 +8,7 @@ protected:
     int _age;       // The underscore is a convention to remind us this is a protected member
     string _name;
 
+
 public:
     Pet(string name, int age) {
         _age = age;
@@ -15,6 +16,16 @@ public:
         cout << "Constructor for Pet " << _name << endl;
     }
 
+    void setAge(int newAge) { // this will update the age if it changes
+        if ((newAge != _age)&&(newAge >= 0)&&(newAge <= 30)) {
+            cout << "your pet " << _name << " has grown up.... or has it gotten younger * vsauce music *. no, probably not. It is now " << newAge << endl;
+            _age = newAge; //updates the age variable with the new age
+        }
+    
+    }
+    int getAge() {
+        return _age; //returns copy of age
+    }
     void setName(string newName) {
         //Update the name, but only if it has changed
         if (newName != _name) {
@@ -67,4 +78,6 @@ int main()
     Pet p1("Carrot", 2);
     Dog d1("Scrapper", 5);
     Cat c1("Furry", 3);
+
+    c1.setAge(15);
 }

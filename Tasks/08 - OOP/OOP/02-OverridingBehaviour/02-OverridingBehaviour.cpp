@@ -42,6 +42,20 @@ public:
     }
 };
 
+class Tortoise : public Pet {
+
+public:
+    Tortoise(string name, int age) : Pet(name, age) {
+        cout << "constructor for Tortoise " << name << endl;
+    }
+    void setAge(int a) {
+        if ((a >= 0) && (a <= 250)) {
+            cout << "changing the age of " << _name << " from " << _age << " to " << a <<
+                _age = a;
+    }
+    }
+
+};
 
 // Child class Dog
 class Dog : public Pet {
